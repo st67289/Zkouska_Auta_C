@@ -55,6 +55,7 @@ tVozidlo* nacti() {
 		kapacita = atoi(strtok(NULL, ";"));
 		tVozidlo* voz = vytvorVozidlo(nazevV, kapacita);
 		
+		// kdyz je zbyly produkt tak ho narvu hned od auta
 		if (zbylyP != NULL) {
 			zbylyP->dalsi = prvniP;
 			voz->dalsiProdukt = zbylyP;
